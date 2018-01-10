@@ -48,7 +48,7 @@ public class UserScanner{
         String input = scanner.nextLine();    // nexline() reads also empty String whereas next() method doesnt.
        
         if(input.equalsIgnoreCase("exit")){
-            main.interrupt();                   // If user types "exit" sends the interrupt command to main Thread.
+            main.interrupt();                   // If user types "exit"  then interrupts a main Thread.
             Thread.currentThread().interrupt();           
         }
     }
